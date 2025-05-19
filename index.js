@@ -26,7 +26,7 @@ mongoose.connection.on('disconnected', () => console.log("disconnected"));
 
 // middlewares:
 app.use(cors({
-    origin: 'https://internship-project-noos.vercel.app/',  // your frontend URL
+    origin: 'https://internship-project-noos.vercel.app',  // your frontend URL
     credentials: true                 // allow sending cookies
 }));
 
