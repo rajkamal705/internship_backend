@@ -23,7 +23,7 @@ export const forgotPassword = async (req, res, next) => {
         await user.save();
 
         // update link:
-        const resetLink = `http://localhost:5173/reset-password/${resetToken}`;
+        const resetLink = `https://internship-project-noos.vercel.app/reset-password/${resetToken}`;
         // const resetLink = `https://stayindia.vercel.app/reset-password/${resetToken}`;
 
         // send mail:
